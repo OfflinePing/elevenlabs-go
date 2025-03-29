@@ -35,6 +35,7 @@ type Model struct {
 type TextToSpeechRequest struct {
 	Text          string         `json:"text"`
 	ModelID       string         `json:"model_id,omitempty"`
+	LanguageCode  string         `json:"language_code,omitempty"`
 	VoiceSettings *VoiceSettings `json:"voice_settings,omitempty"`
 }
 
@@ -72,7 +73,6 @@ type VoiceSharing struct {
 	ClonedByCount          int               `json:"cloned_by_count"`
 	DateUnix               int               `json:"date_unix"`
 	Description            string            `json:"description"`
-	DisableAtUnix          bool              `json:"disable_at_unix"`
 	EnabledInLibrary       bool              `json:"enabled_in_library"`
 	FinancialRewardEnabled bool              `json:"financial_reward_enabled"`
 	FreeUsersAllowed       bool              `json:"free_users_allowed"`
