@@ -8,7 +8,7 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/haguro/elevenlabs-go"
+	"github.com/OfflinePing/elevenlabs-go"
 )
 
 func ExampleClient_TextToSpeech() {
